@@ -157,17 +157,21 @@ LOGIN_URL = reverse_lazy('login') #this for custom login url e.g: localhost:8000
 
 
 #STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
+
+
+
 EMAIL_USE_TLS=True
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='rimba12prayoga@gmail.com'
-EMAIL_HOST_PASSWORD='pass'
+EMAIL_HOST_USER=''
+EMAIL_HOST_PASSWORD=''
 
 # django-debug-toolbar
 
 #DEBUG_TOOLBAR_PANELS = [
-#    'debug_toolbar.panels.versions.VersionsPanel',
+
 #    'debug_toolbar.panels.timer.TimerPanel',
 #    'debug_toolbar.panels.settings.SettingsPanel',
 #    'debug_toolbar.panels.headers.HeadersPanel',
