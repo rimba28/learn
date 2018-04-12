@@ -159,6 +159,7 @@ LOGIN_URL = reverse_lazy('login') #this for custom login url e.g: localhost:8000
 #STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 
 #This is Rimba's branch
+#Ok This is original
 
 #This is Rimba's branch and another changes
 
