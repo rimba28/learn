@@ -160,6 +160,8 @@ LOGIN_URL = reverse_lazy('login') #this for custom login url e.g: localhost:8000
 
 #This is Rimba's branch
 
+#This is Rimba's branch and another changes
+
 EMAIL_USE_TLS=True
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
