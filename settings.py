@@ -162,16 +162,10 @@ LOGIN_URL = reverse_lazy('login') #this for custom login url e.g: localhost:8000
 #This is Rimba's branch and another changes
 #This is Rimba's branch
 #This is Rimba's branch and another changes
-#This is Rimba's branch
-#This is Rimba's branch and another changes
-#This is Rimba's branch
-#This is Rimba's branch and another changes
 
 #This is digabungkeun .. .:D 1
 #This is digabungkeun .. .:D 2
 
-#Ok This is original
-#This is Rimba's branch
 #Ok This is original
 #This is Rimba's branch
 #Ok This is original
