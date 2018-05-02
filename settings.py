@@ -54,8 +54,8 @@ INSTALLED_APPS = [
 #SESSION_CACHE_ALIAS = "default"
 
 MIDDLEWARE_CLASSES = [
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'django.middleware.cache.UpdateCacheMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -105,8 +105,8 @@ DATABASES = {
 }
 
 
-# Password validation kjkshaka
-# https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators sasas
+# Password validation
+# https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -165,7 +165,7 @@ LOGIN_URL = reverse_lazy('login') #this for custom login url e.g: localhost:8000
 
 #This is digabungkeun .. .:D 1
 #This is digabungkeun .. .:D 2
-#yugsagiui
+
 #Ok This is original
 #This is Rimba's branch
 #Ok This is original

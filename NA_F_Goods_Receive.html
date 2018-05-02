@@ -101,41 +101,13 @@
 		});
 
 		//===================================END AJAX SetuP===========================--> 
-//=============sdjhsjhsdks ==============dslksdj
+//=============sdjhsjhsdks ==============
 		//========================Variable Object untuk ===============================
 		var win = win || window,
         grid = $("#jqGrid_NA_F_Goods_Receive"),
         txtSearchMaster = txtSearchMaster || NA.common.doc.querySelector('form.navbar-form div.input-group input[name="q"]'),
         btnSearchMaster = btnSearchMaster || NA.common.doc.querySelector('form.navbar-form button[type="submit"].btn.btn-default'),
-        status = status || win.status, csrftoken = function () { return NA.CookieUtil.get('csrftoken'); }, initializeForm = '',
-        //settings btn sesuai user access
-        //anggap saja sekarang admin
-        btnSave = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav li:nth-child(4)'),
-        btnDelete = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav li:nth-child(5)'),
-        btnExport = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav li:nth-child(6)'),
-        btnPrint = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav li:nth-child(7)'),
-        btnHelp = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav li:nth-child(8)'),
-        containerMenu = NA.common.dialog.doc.querySelector('ul.nav.navbar-nav');//inistialisasi menu 
 
-		window.onunload = function () {
-			if (typeof txtSearchMaster.onclick == "function") {
-				NA.NAEvent.removeHandler(txtSearchMaster, 'keydown', handlerSearchInput)
-			}
-			if (typeof btnSearchMaster.onclick == "function") {
-				NA.NAEvent.removeHandler(btnSearchMaster, 'click', handlerSearchInput);
-			}
-		};
-		function LoadData(page) {
-			var url = 'NA_Goods_Receive_Search/?' + win.encodeURIComponent('columnName') + '=' + win.encodeURIComponent(NA.common.SearchData.getColumnKey()) +
-                      '&' + win.encodeURIComponent('valueKey') + '=' + win.encodeURIComponent(NA.common.SearchData.getValueKey()) +
-                      '&' + win.encodeURIComponent('dataType') + '=' + win.encodeURIComponent(NA.common.SearchData.getDataType()) +
-                      '&' + win.encodeURIComponent('criteria') + '=' + win.encodeURIComponent(NA.common.SearchData.getCriteria());
-			if (arguments.length > 0) {
-				grid.setGridParam({ url: url }).trigger("reloadGrid", [{ page: page, }]);
-			}
-			else {
-				try {
-					grid.jqGrid({
 						url: url,
 						mtype: "GET",
 						datatype: "json",//#column IDapp  no	goods 	datereceived supliername FK_ReceivedBy 	receivedby FK_P_R_By pr_by totalpurchase totalreceived,CreatedDate, CreatedBy 
@@ -180,7 +152,7 @@
 						sortorder: "desc",
 						multiSort: true,
 						shrinkToFit: false,
-						iconSet: "fontAwesome",
+						iconSet: "fontAwesome",dsfsfsdf
 						forceFit: true,
 						toolbar: true,
 						scrollrows: true,
@@ -198,8 +170,7 @@
 
 				} catch (e) {
 				    ShowAlert(e.message);
-					console.log(e);
-					document.body.style.cursor = 'default';
+					console.log(e);dgdfgdfgdfgd
 				};
 			};
 		};
