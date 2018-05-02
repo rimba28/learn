@@ -24,23 +24,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b9578a94-76ea-4936-8cfe-94b039a639ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-INTERNAL_IPS = ('127.0.0.1', 'localhost',)
-
-ALLOWED_HOSTS = []
-
-
-# Application definition
-
-INSTALLED_APPS = [
-    'app',
-	'NA_DataLayer',
-	'NA_Domain',
-	'NA_Models',
-    'NA_DataLayer.NA_User',
-    # Add your apps here to enable them
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
